@@ -1,0 +1,3 @@
+---
+- name: Apache Storm | Update configuration
+  template: src=storm.yaml.j2 dest=/usr/local/etc/storm/conf/storm.yaml owner={{ storm_user }} group={{ storm_group }} mode=0644
