@@ -13,3 +13,4 @@
 
 - name: Apache Storm | Set the right expiration on the storm user
   command: "sudo chage -I -1 -E -1 -m -1 -M -1 -W -1 -E -1 {{ storm_user }}"
+  changed_when: False
