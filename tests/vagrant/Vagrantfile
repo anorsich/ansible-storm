@@ -24,7 +24,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
 
   config.vm.provision "ansible" do |ansible|
-      ansible.playbook = "playbook.yml"
+      ansible.playbook = "test.yml"
   end
 
   # Create a public network, which generally matched to bridged network.
